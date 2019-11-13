@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 
 const Form = props => {
-  //need to display props for--> name, email, role
+  //need to display props for--> name(input), email(input), role(textarea)
   return (
     <div>
-      {/* will need to map over form to output and return dynamic list */}
-      Form component
-      {/* <p>{props.name}</p>
-      <p>{props.email}</p>
-      <p>{props.role}</p> */}
+      {props.users.map(user => (
+        <div key={user.id}>
+          <p>{user.name}</p>
+          <p>{user.email}</p>
+          <p>{user.role}</p>
+        </div>
+      ))}
     </div>
   );
 };
