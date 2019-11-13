@@ -8,7 +8,7 @@ const FormSetup = () => {
     role: ''
   });
 
-  //Setup the onChange handler to watch and use when the 'state' change on each input(use ...spread operator)
+  //Setup the onChange handler to watch and use when the 'state' change with computed properties on each input(use ...spread operator)
 
   //Setup the onSubmit functionality to 'create' a new note -->use 'addNewUser' passed from and created in App.js
 

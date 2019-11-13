@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import FormSetup from './components/FormSetup';
-import Form from './components/Form';
+import UserSetup from './components/UserSetup';
+import User from './components/User';
 
 import './App.css';
 
@@ -21,8 +21,8 @@ function App() {
   return (
     <div>
       <h1>Todd's forms</h1>
-      <FormSetup />
-      <Form users={users} />
+      <UserSetup />
+      <User users={users} />
     </div>
   );
 }
