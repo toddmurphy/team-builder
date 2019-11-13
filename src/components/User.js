@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Form = props => {
   //need to display props for--> name(input), email(input), role(textarea)

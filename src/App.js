@@ -17,11 +17,20 @@ function App() {
   ]);
 
   //Add functionality to 'create' or add a new user, use ... spread operator to clone users
+  const addNewUser = user => {
+    const newUser = {
+      id: Date.now(),
+      name: user.name,
+      email: user.email,
+      role: user.role
+    };
+    setUsers([...users, newUser]);
+  };
 
   return (
     <div>
       <h1>Todd's forms</h1>
-      <UserSetup />
+      <UserSetup addNewUser={addNewUser} />
       <User users={users} />
     </div>
   );
