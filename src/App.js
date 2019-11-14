@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import './App.css';
 
 const FormContainer = styled.div`
-  border: 2px solid red;
+  text-align: center;
 `;
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
 
   return (
     <FormContainer>
-      <h1>Todd's forms</h1>
+      <h1>Todd's Amazing User Form</h1>
       <UserSetup addNewUser={addNewUser} />
       <User users={users} />
     </FormContainer>
