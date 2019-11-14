@@ -35,7 +35,7 @@ function App() {
 
   return (
     <FormContainer>
-      <h1>Todd's Amazing User Form</h1>
+      <h1>Team Baskova Team Recruitment</h1>
       <UserSetup addNewUser={addNewUser} />
       <User users={users} />
     </FormContainer>
